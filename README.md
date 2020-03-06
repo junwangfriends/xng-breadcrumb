@@ -1,3 +1,4 @@
+# router params added for breadcrumb link
 # xng-breadcrumb
 
 [![npm version](https://img.shields.io/npm/v/xng-breadcrumb.svg)](https://www.npmjs.com/package/xng-breadcrumb)
