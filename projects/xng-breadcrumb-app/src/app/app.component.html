@@ -6,6 +6,16 @@
       <xng-breadcrumb id="default"></xng-breadcrumb>
     </div>
 
+    <div><a href="http://localhost:4200/mentee?interval=oneyear&site=0">Click to reload page with site and interval params</a></div>
+    <div>
+      <label for="titleCase">The home link should have interval and site params after reload </label>
+      <xng-breadcrumb separator=">>" id="titleCase" [allowedParams]="['interval', 'site']">
+        <ng-container *xngBreadcrumbItem="let breadcrumb">
+          {{ breadcrumb | titlecase }}
+        </ng-container>
+      </xng-breadcrumb>
+    </div>
+
     <div>
       <label for="titleCase">Titlecase and custom seperator </label>
       <xng-breadcrumb separator=">>" id="titleCase">

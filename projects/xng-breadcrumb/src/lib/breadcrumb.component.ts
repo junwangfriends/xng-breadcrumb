@@ -3,6 +3,7 @@ import { Observable } from 'rxjs';
 import { BreadcrumbItemDirective } from './breadcrumb-item.directive';
 import { BreadcrumbService } from './breadcrumb.service';
 import { Breadcrumb } from './breadcrumb';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'xng-breadcrumb',
@@ -12,7 +13,9 @@ import { Breadcrumb } from './breadcrumb';
 })
 export class BreadcrumbComponent implements OnInit {
   breadcrumbs$: Observable<Breadcrumb[]>;
+  params$: Observable<any>;
   separatorTemplate: TemplateRef<void>;
+
   private _separator = '/';
 
   /**
@@ -59,6 +62,13 @@ export class BreadcrumbComponent implements OnInit {
   get separator() {
     return this._separator;
   }
+
+  /**
+   * Provide the params list from state
+   *
+   * @memberof BreadcrumbComponent
+   */
+  @Input() allowedParams: string | [];
 
   constructor(private breadcrumbService: BreadcrumbService) {}
 

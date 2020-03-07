@@ -4,9 +4,10 @@ import { RouterModule } from '@angular/router';
 import { BreadcrumbItemDirective } from './breadcrumb-item.directive';
 import { BreadcrumbComponent } from './breadcrumb.component';
 import { AutoLabelPipe } from './auto-label.pipe';
+import { ParamFilterPipe } from './param-filter.pipe';
 
 @NgModule({
-  declarations: [BreadcrumbComponent, BreadcrumbItemDirective, AutoLabelPipe],
+  declarations: [BreadcrumbComponent, BreadcrumbItemDirective, AutoLabelPipe, ParamFilterPipe],
   imports: [CommonModule, RouterModule],
   exports: [BreadcrumbComponent, BreadcrumbItemDirective]
 })
