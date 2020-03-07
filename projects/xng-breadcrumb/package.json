@@ -1,20 +1,20 @@
 {
-  "name": "xng-breadcrumb",
+  "name": "params-xng-breadcrumb-workspace",
   "version": "5.0.1",
   "license": "MIT",
-  "description": "A declarative and reactive breadcrumb approach for Angular 6 and beyond https://www.npmjs.com/package/xng-breadcrumb",
+  "description": "Support url param based on allowedParam input. Clone from https://www.npmjs.com/package/xng-breadcrumb",
   "author": {
-    "name": "Uday Vunnam",
-    "email": "uday4vunnam@gmail.com"
+    "name": "Jun Wang",
+    "email": "junwangfriends@gmail.com"
   },
-  "homepage": "https://github.com/udayvunnam/xng-breadcrumb",
+  "homepage": "https://github.com/junwangfriends/xng-breadcrumb",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/udayvunnam/xng-breadcrumb.git"
   },
   "bugs": {
-    "url": "https://github.com/udayvunnam/xng-breadcrumb/issues",
-    "email": "uday4vunnam@gmail.com"
+    "url": "https://github.com/junwangfriends/xng-breadcrumb/issues",
+    "email": "junwangfriends@gmail.com"
   },
   "keywords": [
     "angular",

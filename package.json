@@ -1,8 +1,8 @@
 {
   "name": "params-xng-breadcrumb-workspace",
-  "version": "5.0.1",
+  "version": "5.0.2",
   "license": "MIT",
-  "description": "Clone from https://www.npmjs.com/package/xng-breadcrumb",
+  "description": "Support url param based on allowedParam input. Clone from https://www.npmjs.com/package/xng-breadcrumb",
   "scripts": {
     "watch:lib": "ng build xng-breadcrumb --watch",
     "watch:app": "ng serve xng-breadcrumb-app --open=true",
@@ -25,8 +25,8 @@
     "lint": "ng lint"
   },
   "author": {
-    "name": "Jun Wang",
-    "email": "junwangfriends@gmail.com"
+    "name": "Uday Vunnam & Jun Wang",
+    "email": "uday4vunnam@gmail.com, junwangfriends@gmail.com"
   },
   "homepage": "https://github.com/junwangfriends/xng-breadcrumb",
   "bugs": "https://github.com/junwangfriends/xng-breadcrumb/issues",
