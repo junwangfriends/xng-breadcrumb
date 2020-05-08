@@ -1,19 +1,34 @@
 <div class="app-container mat-app-background" [ngClass]="{ 'xng-dark-theme': darkMode }">
+  <br />
+  <h2>allowedParams demo</h2>
+  <div>
+    <a href="http://localhost:4200/mentee?interval=oneyear&site=0">Click to load the allowParams demo page with site and interval params</a>
+  </div>
+  <div>
+    <label for="titleCase">The home link should have interval and site params after reload </label>
+    <xng-breadcrumb separator=">>" id="titleCase" [allowedParams]="['interval', 'site']">
+      <ng-container *xngBreadcrumbItem="let breadcrumb">
+        {{ breadcrumb | titlecase }}
+      </ng-container>
+    </xng-breadcrumb>
+  </div>
+
+  <h2>displayOnly demo</h2>
+  <div><a href="http://localhost:4200/group/child">Click to load the displayOnly demo page</a></div>
+  <div>
+    <label for="titleCase">The parent group path should be label only without clickable link </label>
+    <xng-breadcrumb separator=">>" id="titleCase">
+      <ng-container *xngBreadcrumbItem="let breadcrumb">
+        {{ breadcrumb | titlecase }}
+      </ng-container>
+    </xng-breadcrumb>
+  </div>
+  <br />
   <app-navbar (themeChanged)="updateTheme($event)"></app-navbar>
   <section class="route-container" fxLayout="column" fxLayoutGap="16px">
     <div>
       <label for="default">Default breadcrumbs </label>
       <xng-breadcrumb id="default"></xng-breadcrumb>
-    </div>
-
-    <div><a href="http://localhost:4200/mentee?interval=oneyear&site=0">Click to reload page with site and interval params</a></div>
-    <div>
-      <label for="titleCase">The home link should have interval and site params after reload </label>
-      <xng-breadcrumb separator=">>" id="titleCase" [allowedParams]="['interval', 'site']">
-        <ng-container *xngBreadcrumbItem="let breadcrumb">
-          {{ breadcrumb | titlecase }}
-        </ng-container>
-      </xng-breadcrumb>
     </div>
 
     <div>

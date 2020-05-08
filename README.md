@@ -1,4 +1,47 @@
-# router params added for breadcrumb link
+# This package is folked from https://www.npmjs.com/package/xng-breadcrumb
+
+> Adding 2 configures:
+
+```typescript
+allowedParams: Array<string>
+displayOnly: boolean
+```
+
+#### 1.Router params
+
+To allow the link passing over current router params through the given params array
+
+```typescript
+<xng-breadcrumb [allowedParams]="['interval', 'site']">
+```
+
+The breadcrumb link will carry over current url param for `interval` and `site` only, ignore others.
+
+#### 2.Display only
+
+Sometime the parent path is for organization only, no landing page to load, in this case, the breadcrumb should be label only without clickable link.
+
+```typescript
+const routes: Routes = [
+  path: 'parent',
+  component: ParentComponent,
+  pathMatch: 'full',
+  data: {
+    breadcrumb: {
+      breadcrumb: {//we need this extra layer to pass the params somehow
+        displayOnly: true
+      }
+    }
+  }
+]
+
+
+```
+
+---
+
+## Content below is copied over from https://www.npmjs.com/package/xng-breadcrumb
+
 # xng-breadcrumb
 
 [![npm version](https://img.shields.io/npm/v/xng-breadcrumb.svg)](https://www.npmjs.com/package/xng-breadcrumb)
@@ -38,7 +81,7 @@
 1. Install via npm or yarn
 
 ```javascript
-npm install --save xng-breadcrumb
+npm install --save params-xng-breadcrumb
 //------------- OR --------------
 yarn add xng-breadcrumb
 ```

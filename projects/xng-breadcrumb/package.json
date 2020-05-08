@@ -1,6 +1,6 @@
 {
-  "name": "params-xng-breadcrumb-workspace",
-  "version": "5.0.1",
+  "name": "params-xng-breadcrumb",
+  "version": "5.0.4",
   "license": "MIT",
   "description": "Support url param based on allowedParam input. Clone from https://www.npmjs.com/package/xng-breadcrumb",
   "author": {

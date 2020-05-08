@@ -48,6 +48,10 @@ export const appRoutes: Routes = [
     path: 'connect',
     loadChildren: './connect/connect.module#ConnectModule'
   },
+  {
+    path: 'group',
+    loadChildren: './group/group.module#GroupModule'
+  },
   { path: '**', pathMatch: 'full', component: PageNotFoundComponent }
 ];
 

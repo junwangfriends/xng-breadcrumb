@@ -61,7 +61,7 @@
 1. Install via npm or yarn
 
 ```javascript
-npm install --save xng-breadcrumb
+npm install --save params-xng-breadcrumb
 //------------- OR --------------
 yarn add xng-breadcrumb
 ```

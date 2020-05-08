@@ -3,6 +3,10 @@
  */
 export interface Breadcrumb {
   /**
+   * breacrumb displayOnly for display text only without link
+   */
+  displayOnly?: string;
+  /**
    * breacrumb label for a route
    */
   label?: string;
