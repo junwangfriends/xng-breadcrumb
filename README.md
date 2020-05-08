@@ -17,15 +17,15 @@ To allow the link passing over current router params through the given params ar
 
 The breadcrumb link will carry over current url param for `interval` and `site` only, ignore others.
 
+![allowedParams image](https://github.com/junwangfriends/xng-breadcrumb/raw/master/allowedParams_screenshot.png)
+
 #### 2.Display only
 
 Sometime the parent path is for organization only, no landing page to load, in this case, the breadcrumb should be label only without clickable link.
 
 ```typescript
 const routes: Routes = [
-  path: 'parent',
-  component: ParentComponent,
-  pathMatch: 'full',
+  path: 'group',
   data: {
     breadcrumb: {
       breadcrumb: {//we need this extra layer to pass the params somehow
@@ -37,6 +37,8 @@ const routes: Routes = [
 
 
 ```
+
+![displayOnly image](https://github.com/junwangfriends/xng-breadcrumb/raw/master/displayOnly_screenshot.png)
 
 ---
 

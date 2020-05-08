@@ -5,20 +5,13 @@ import { ChildComponent } from './child/child.component';
 const routes: Routes = [
   {
     path: '',
-    // pathMatch: 'full',
-    // component: ChildComponent,
     data: {
       breadcrumb: {
-        displayOnly: true,
         breadcrumb: {
           displayOnly: true
         }
       }
     }
-
-    // children: [
-
-    // ]
   },
   {
     path: 'child',
