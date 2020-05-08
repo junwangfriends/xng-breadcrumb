@@ -1,6 +1,6 @@
 {
   "name": "params-xng-breadcrumbe",
-  "version": "5.0.5",
+  "version": "5.0.5.1",
   "license": "MIT",
   "description": "Support url param based on allowedParam input. Clone from https://www.npmjs.com/package/xng-breadcrumb",
   "scripts": {

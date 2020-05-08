@@ -9,14 +9,32 @@
           class="xng-breadcrumb-link"
         >
           <ng-container
-            *ngTemplateOutlet="itemTemplate; context: { $implicit: breadcrumb.label, info: breadcrumb.info, last: isLast, first: isFirst }"
+            *ngTemplateOutlet="
+              itemTemplate;
+              context: {
+                $implicit: breadcrumb.label,
+                info: breadcrumb.info,
+                last: isLast,
+                first: isFirst,
+                displayOnly: breadcrumb.displayOnly
+              }
+            "
           ></ng-container>
           <ng-container *ngIf="!itemTemplate">{{ breadcrumb.label }}</ng-container>
         </a>
 
         <label *ngIf="isLast || breadcrumb.displayOnly" class="xng-breadcrumb-trail">
           <ng-container
-            *ngTemplateOutlet="itemTemplate; context: { $implicit: breadcrumb.label, info: breadcrumb.info, last: isLast, first: isFirst }"
+            *ngTemplateOutlet="
+              itemTemplate;
+              context: {
+                $implicit: breadcrumb.label,
+                info: breadcrumb.info,
+                last: isLast,
+                first: isFirst,
+                displayOnly: breadcrumb.displayOnly
+              }
+            "
           ></ng-container>
           <ng-container *ngIf="!itemTemplate">{{ breadcrumb.label }}</ng-container>
         </label>
